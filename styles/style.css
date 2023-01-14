@@ -1,0 +1,255 @@
+/* --------- Utilities --------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -------- Navigation bar styles ---------- */
+.logo {
+    font-size: 45px;
+    font-weight: 700;
+    color: #131313;
+}
+
+.navigation {
+    width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* ------------ Header styles ------------ */
+.header {
+    padding-top: 50px;
+    width: 100%;
+    height: 1300px;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.header-details {
+    text-align: center;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.header-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 30px 450px;
+}
+
+.primary-button {
+    color: aliceblue;
+    width: 170px;
+    height: 60px;
+    background-color: #FF900E;
+    font-weight: 500;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 40px;
+}
+
+.header-details img {
+    height: 700;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* --------- Features styles ------------ */
+.features {
+    display: flex;
+    gap: 75px;
+    margin: 150px;
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.features-images img {
+    height: 300px;
+    width: 300px;
+}
+
+.feature-details {
+    padding-top: 150px;
+    padding-right: 85px;
+}
+
+#part-1 {
+    color: #727272;
+    font-weight: 500;
+    font-size: 45px;
+}
+
+#part-2,
+.feature-list-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+#part-3 {
+    color: #FF900E;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.feature-title {
+    margin-bottom: 30px;
+}
+
+.feature-description,
+.list-description {
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* --------- Feature info list styles ---------- */
+.feature-info {
+    display: flex;
+    gap: 50px;
+    margin: 0 150px;
+}
+
+.list-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+}
+
+.list-item {
+    background: #FFFFFF;
+box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+border-radius: 8px;
+padding: 30px;
+}
+    
+.list-heading {
+    display: flex;
+}
+
+.list-heading img {
+    height: 100px;
+    width: 5px;
+    background-color: #FF900E;
+}
+
+.feature-list-title {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.list-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.list-item .list-description {
+    margin-bottom: 0;
+}
+
+.image-button-container {
+    width: 800px;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+.architecture img {
+    height: 920px;
+    padding-left: 90px;
+}
+
+.secondary-button {
+    /* position: absolute; */
+    position: relative;
+width: 340px;
+height: 190px;
+background-color: #FF900E;
+border: none;
+border-radius: 8px;
+}
+
+#text-1 {
+    font-weight: 700;
+font-size: 55px;
+color: aliceblue;
+}
+
+#text-2 {
+    font-weight: 600;
+font-size: 20px;
+color: aliceblue;
+}
+
+/* -------------- Some facts styles ----------- */
+.some-facts {
+    margin: 150px;
+}
+
+.fact-title {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.fact-info, .fact-description {
+    color: #727272;
+    font-weight: 500;
+    
+}
+.facts-containers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    padding: 0 30px;
+    margin-top: 80px;
+}
+
+.fact {
+    height: 220px;
+    width: 220px;
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 7px;
+    padding-top: 45px;
+}
+.fact:hover {
+    transform: translate(-20px, 10px);
+    transition: 0.5s;
+}
+
+.fact-number {
+    font-weight: 600;
+font-size: 40px;
+}
+
+ 
