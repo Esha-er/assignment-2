@@ -5,7 +5,14 @@
     padding: 0;
 }
 
-/* -------- Navigation bar styles ---------- */
+/* -------- Header and Navigation bar styles ---------- */
+.header {
+    padding-top: 50px;
+    width: 100%;
+    height: 1300px;
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
 .logo {
     font-size: 45px;
     font-weight: 700;
@@ -18,7 +25,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 40px;
     padding-bottom: 30px;
 }
 
@@ -30,16 +36,9 @@
 
 .navigation li a {
     text-decoration: none;
+    color: #424242;
     font-weight: 500;
     font-size: 18px;
-}
-
-/* ------------ Header styles ------------ */
-.header {
-    padding-top: 50px;
-    width: 100%;
-    height: 1300px;
-    background-color: rgba(255, 144, 14, 0.1);
 }
 
 .header-details {
@@ -70,6 +69,12 @@
     align-items: center;
     padding: 15px 20px;
     margin-bottom: 40px;
+}
+
+.primary-button:hover {
+    letter-spacing: 0.8px;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .header-details img {
@@ -148,11 +153,11 @@
 
 .list-item {
     background: #FFFFFF;
-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
-border-radius: 8px;
-padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
 }
-    
+
 .list-heading {
     display: flex;
 }
@@ -173,6 +178,7 @@ padding: 30px;
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .list-item .list-description {
     margin-bottom: 0;
 }
@@ -180,7 +186,6 @@ padding: 30px;
 .image-button-container {
     width: 800px;
     height: 1000px;
-    border: 1px solid black;
 }
 
 .architecture img {
@@ -189,25 +194,31 @@ padding: 30px;
 }
 
 .secondary-button {
-    /* position: absolute; */
-    position: relative;
-width: 340px;
-height: 190px;
-background-color: #FF900E;
-border: none;
-border-radius: 8px;
+    width: 320px;
+    height: 180px;
+    background-color: #FF900E;
+    border: none;
+    border-radius: 8px;
+    margin-top: -80px;
+}
+
+.secondary-button:hover {
+    letter-spacing: 4px;
+    transition: 0.5s;
+    cursor: pointer;
+
 }
 
 #text-1 {
     font-weight: 700;
-font-size: 55px;
-color: aliceblue;
+    font-size: 55px;
+    color: aliceblue;
 }
 
 #text-2 {
     font-weight: 600;
-font-size: 20px;
-color: aliceblue;
+    font-size: 20px;
+    color: aliceblue;
 }
 
 /* -------------- Some facts styles ----------- */
@@ -215,17 +226,19 @@ color: aliceblue;
     margin: 150px;
 }
 
-.fact-title {
+.section-title {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
-.fact-info, .fact-description {
+.section-info,
+.fact-description {
     color: #727272;
     font-weight: 500;
-    
+
 }
+
 .facts-containers {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -241,15 +254,97 @@ color: aliceblue;
     border: 1px solid #FF900E;
     border-radius: 7px;
     padding-top: 45px;
+    transition: 1s;
 }
+
 .fact:hover {
-    transform: translate(-20px, 10px);
-    transition: 0.5s;
+    transform: scale(1.3);
+    background: linear-gradient(rgb(247, 217, 162), rgb(255, 255, 255), rgb(252, 198, 207));
+    cursor: pointer;
 }
 
 .fact-number {
     font-weight: 600;
-font-size: 40px;
+    font-size: 40px;
 }
 
- 
+/* ---------- Contact us styles --------- */
+.contact-us {
+    width: 1200px;
+    background: linear-gradient(to bottom, rgb(248, 209, 137), rgb(255, 249, 249));
+    margin-left: 160px;
+    margin-bottom: 80px;
+    border-radius: 8px;
+}
+
+.contact-us h2 {
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 60px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+}
+
+#name,
+#email,
+#textarea {
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 7px;
+}
+
+#textarea {
+    height: 70px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.contact-us .primary-button {
+    margin-left: 430px;
+}
+
+/* ----------- Our Sponsors styles ----------  */
+.our-sponsors {
+    text-align: center;
+}
+
+.sponsors {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin: 80px;
+    padding: 0 50px;
+}
+
+.sponsors img {
+    height: 45px;
+    width: 160px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.sponsors img:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+    transform: rotate(-10deg);
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF4E7;
+    width: 1220px;
+    height: 80px;
+    padding: 30px 0px;
+    margin: 0 90px 50px 150px;
+}
+
+/* --------------- End of CSS ---------------  */
